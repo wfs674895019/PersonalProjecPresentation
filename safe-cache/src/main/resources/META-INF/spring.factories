@@ -1,0 +1,3 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+  com.wfs.safecache.config.SafeCacheAutoConfiguration,\
+  com.wfs.safecache.config.MyRedisAutoConfiguration

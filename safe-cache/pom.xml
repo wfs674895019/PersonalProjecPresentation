@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.wfs</groupId>
+    <artifactId>safe-cache</artifactId>
+    <version>1.0.0</version>
+    <name>safe-cache</name>
+    <description>safe-cache</description>
+    <properties>
+        <java.version>17</java.version>
+        <spring-boot-starter.verson>2.7.13</spring-boot-starter.verson>
+        <mybatis-plus-boot-starter.verson>3.5.3.1</mybatis-plus-boot-starter.verson>
+        <quartz.verson>2.3.2</quartz.verson>
+        <commons-pool2.verson>2.11.1</commons-pool2.verson>
+        <aspectjweaver.verson>1.9.7</aspectjweaver.verson>
+        <redisson-spring-boot-starter.verson>3.17.4</redisson-spring-boot-starter.verson>
+        <fastjson.verson>2.0.32</fastjson.verson>
+        <lombok.verson>1.18.28</lombok.verson>
+        <maven-source-plugin.verson>3.2.1</maven-source-plugin.verson>
+
+        <!-- 设置编译失败不中断构建 -->
+<!--        <maven.compiler.failOnError>false</maven.compiler.failOnError>-->
+    </properties>
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter</artifactId>
+            <version>${spring-boot-starter.verson}</version>
+        </dependency>
+        <!--参数校验-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-validation</artifactId>
+            <version>${spring-boot-starter.verson}</version>
+        </dependency>
+        <!--application.yaml里有代码补全和注释-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-configuration-processor</artifactId>
+            <version>${spring-boot-starter.verson}</version>
+            <optional>true</optional>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+            <version>${spring-boot-starter.verson}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-redis</artifactId>
+            <version>${spring-boot-starter.verson}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.baomidou</groupId>
+            <artifactId>mybatis-plus-boot-starter</artifactId>
+            <version>${mybatis-plus-boot-starter.verson}</version>
+        </dependency>
+
+        <!--cron格式校验-->
+        <dependency>
+            <groupId>org.quartz-scheduler</groupId>
+            <artifactId>quartz</artifactId>
+            <version>${quartz.verson}</version>
+        </dependency>
+
+        <!--redis 连接池配置需要这个-->
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-pool2</artifactId>
+            <version>${commons-pool2.verson}</version>
+        </dependency>
+
+        <!--springAOP-->
+        <dependency>
+            <groupId>org.aspectj</groupId>
+            <artifactId>aspectjweaver</artifactId>
+            <version>${aspectjweaver.verson}</version>
+        </dependency>
+
+        <!--redisson-spring-boot-starter高版本不兼容-->
+        <dependency>
+            <groupId>org.redisson</groupId>
+            <artifactId>redisson-spring-boot-starter</artifactId>
+            <version>${redisson-spring-boot-starter.verson}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>fastjson</artifactId>
+            <version>${fastjson.verson}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>${lombok.verson}</version>
+        </dependency>
+    </dependencies>
+
+    <!--用这玩意打的jar包可以包含注释-->
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-source-plugin</artifactId>
+                <version>${maven-source-plugin.verson}</version>
+                <executions>
+                    <execution>
+                        <id>attach-sources</id>
+                        <goals>
+                            <goal>jar</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
+</project>
