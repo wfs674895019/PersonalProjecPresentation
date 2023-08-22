@@ -4,8 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cfff8fc6-5a91-46fe-adbb-5d4cf747fcde" name="变更" comment="添加README.md目录">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="cfff8fc6-5a91-46fe-adbb-5d4cf747fcde" name="变更" comment="更新README.md目录">
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -70,7 +69,7 @@
       <workItem from="1692610936042" duration="941000" />
       <workItem from="1692667626490" duration="1008000" />
       <workItem from="1692691293034" duration="1200000" />
-      <workItem from="1692692514225" duration="3061000" />
+      <workItem from="1692692514225" duration="3383000" />
     </task>
     <task id="LOCAL-00001" summary="项目提交">
       <created>1692611151848</created>
@@ -114,7 +113,14 @@
       <option name="project" value="LOCAL" />
       <updated>1692695262020</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="更新README.md目录">
+      <created>1692696384550</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1692696384550</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -136,6 +142,7 @@
     <MESSAGE value="更新README.md" />
     <MESSAGE value="更新README.md的图片地址" />
     <MESSAGE value="添加README.md目录" />
-    <option name="LAST_COMMIT_MESSAGE" value="添加README.md目录" />
+    <MESSAGE value="更新README.md目录" />
+    <option name="LAST_COMMIT_MESSAGE" value="更新README.md目录" />
   </component>
 </project>

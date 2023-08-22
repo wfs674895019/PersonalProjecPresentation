@@ -117,12 +117,12 @@
 
 | 配置项                                  | 解释                 | 数据类型 |
 | --------------------------------------- | -------------------- | -------- |
-| mszq-safe-cache.timeout                 | 缓存存活时间         | Long     |
-| mszq-safe-cache.unit                    | 缓存存活时间单位     | TimeUnit |
-| mszq-safe-cache.enable-distributed-lock | 是否使用分布式锁     | Boolean  |
-| mszq-safe-cache.save-null               | 是否缓存null         | Boolean  |
-| mszq-safe-cache.timeout-of-null         | null缓存存活时间     | Long     |
-| mszq-safe-cache.unit-of-null            | null缓存存活时间单位 | TimeUnit |
+| wfs-safe-cache.timeout                 | 缓存存活时间         | Long     |
+| wfs-safe-cache.unit                    | 缓存存活时间单位     | TimeUnit |
+| wfs-safe-cache.enable-distributed-lock | 是否使用分布式锁     | Boolean  |
+| wfs-safe-cache.save-null               | 是否缓存null         | Boolean  |
+| wfs-safe-cache.timeout-of-null         | null缓存存活时间     | Long     |
+| wfs-safe-cache.unit-of-null            | null缓存存活时间单位 | TimeUnit |
 
 ### SafeCacheBloomFilterProperties：缓存穿透相关配置
 
@@ -130,25 +130,25 @@
 
 | 配置项                                                   | 解释                                                         | 数据类型 |
 | -------------------------------------------------------- | ------------------------------------------------------------ | -------- |
-| mszq-safe-cache.bloom-filter.update-cron                 | 布隆过滤器定时更新任务的cron表达式，用于所有布隆过滤器的统一配置，若需要停用定时更新，可设置为`stop`<br />该配置项同时存在于`application配置文件` 和 `注解参数`中，如未在`application`中进行配置，则会使用`注解参数`中的值 | String   |
-| mszq-safe-cache.bloom-filter.reset-update-cron           | 项目启动时是否重置redis中已有的BloomFilter:UpdateCron**（default=true）** | boolean  |
-| mszq-safe-cache.bloom-filter.reset-bloom-filter-config   | 项目启动时是否重置 redis 中已有的布隆过滤器的配置信息（具体指 `InitOfExpectedInsertions`和`InitOfFalseProbability`）**（default=true）**<br />如果设置为`true`，则项目启动时会应用`@BloomFIlter`参数中的`InitOfExpectedInsertions`和`InitOfFalseProbability`作为布隆过滤器的创建参数，该参数会作为布隆过滤器的配置信息存入redis中。<br />如果设置为`false`，则会优先使用redis中已有的布隆过滤器的`InitOfExpectedInsertions`和`InitOfFalseProbability`作为布隆过滤器的创建参数；如果redis中不存在对应参数则会使用`@BloomFIlter`中的参数。<br />如果你对线上的布隆过滤器进行了修改，并希望这些修改可以在下次服务器启动时保留，而不是手动在对应的`@BloomFIlter`中进行参数修改，则可以将该配置项设为`false` | boolean  |
-| mszq-safe-cache.bloom-filter.max-amount-of-inserted-data | 布隆过滤器初始化时，每批次从数据库获取的最大数据量，即分页查询数据库中数据，将数据插入进布隆过滤器时，每页获取的数据条数（**default=1000**，每批次最多获取1000条数据）<br />当数据库数据量过大，不适宜单次将数据库数据全部获取到服务器中 | int      |
-| mszq-safe-cache.bloom-filter.max-amount-of-inserted-data | 是否开启驼峰转下划线映射**（default=true）**                 | boolean  |
-| mszq-safe-cache.bloom-filter.false-rate-monitor-cron     | 监视误判率的定时任务的Cron表达式，如果布隆过滤器的Redis中数据遭到非法删除或修改，也会触发更新（**default="0 5/10 * * * ?"**，从每小时的五分开始，每十分钟检查所有布隆过滤器的误判率） | String   |
-| mszq-safe-cache.bloom-filter.queries-threshold           | 误判率监视器的Queries阈值，即查询次数大于queriesThreshold且误判率大于falseRateThreshold时进行布隆过滤器更新**（default=100000）** | int      |
-| mszq-safe-cache.bloom-filter.false-rate-threshold        | 误判率监视器的FalseRate阈值，即查询次数大于queriesThreshold且误判率大于falseRateThreshold时进行布隆过滤器更新**（default=0.01）** | double   |
-| mszq-safe-cache.bloom-filter.check-lease-cron            | 检查Master服务器租期的定时任务（**default="0 0/5 * * * ?"**，每五分钟检查一次Master服务器租期） | String   |
-| mszq-safe-cache.bloom-filter.lease-term                  | 单次租期时长**（default=9）**                                | long     |
-| mszq-safe-cache.bloom-filter.lease-term-time-unit        | 单次租期时长的时间单位                                       | TimeUnit |
-| mszq-safe-cache.bloom-filter.permission-password         | 进行布隆过滤器http操作的权限识别码**（default="root"）**     | String   |
+| wfs-safe-cache.bloom-filter.update-cron                 | 布隆过滤器定时更新任务的cron表达式，用于所有布隆过滤器的统一配置，若需要停用定时更新，可设置为`stop`<br />该配置项同时存在于`application配置文件` 和 `注解参数`中，如未在`application`中进行配置，则会使用`注解参数`中的值 | String   |
+| wfs-safe-cache.bloom-filter.reset-update-cron           | 项目启动时是否重置redis中已有的BloomFilter:UpdateCron**（default=true）** | boolean  |
+| wfs-safe-cache.bloom-filter.reset-bloom-filter-config   | 项目启动时是否重置 redis 中已有的布隆过滤器的配置信息（具体指 `InitOfExpectedInsertions`和`InitOfFalseProbability`）**（default=true）**<br />如果设置为`true`，则项目启动时会应用`@BloomFIlter`参数中的`InitOfExpectedInsertions`和`InitOfFalseProbability`作为布隆过滤器的创建参数，该参数会作为布隆过滤器的配置信息存入redis中。<br />如果设置为`false`，则会优先使用redis中已有的布隆过滤器的`InitOfExpectedInsertions`和`InitOfFalseProbability`作为布隆过滤器的创建参数；如果redis中不存在对应参数则会使用`@BloomFIlter`中的参数。<br />如果你对线上的布隆过滤器进行了修改，并希望这些修改可以在下次服务器启动时保留，而不是手动在对应的`@BloomFIlter`中进行参数修改，则可以将该配置项设为`false` | boolean  |
+| wfs-safe-cache.bloom-filter.max-amount-of-inserted-data | 布隆过滤器初始化时，每批次从数据库获取的最大数据量，即分页查询数据库中数据，将数据插入进布隆过滤器时，每页获取的数据条数（**default=1000**，每批次最多获取1000条数据）<br />当数据库数据量过大，不适宜单次将数据库数据全部获取到服务器中 | int      |
+| wfs-safe-cache.bloom-filter.max-amount-of-inserted-data | 是否开启驼峰转下划线映射**（default=true）**                 | boolean  |
+| wfs-safe-cache.bloom-filter.false-rate-monitor-cron     | 监视误判率的定时任务的Cron表达式，如果布隆过滤器的Redis中数据遭到非法删除或修改，也会触发更新（**default="0 5/10 * * * ?"**，从每小时的五分开始，每十分钟检查所有布隆过滤器的误判率） | String   |
+| wfs-safe-cache.bloom-filter.queries-threshold           | 误判率监视器的Queries阈值，即查询次数大于queriesThreshold且误判率大于falseRateThreshold时进行布隆过滤器更新**（default=100000）** | int      |
+| wfs-safe-cache.bloom-filter.false-rate-threshold        | 误判率监视器的FalseRate阈值，即查询次数大于queriesThreshold且误判率大于falseRateThreshold时进行布隆过滤器更新**（default=0.01）** | double   |
+| wfs-safe-cache.bloom-filter.check-lease-cron            | 检查Master服务器租期的定时任务（**default="0 0/5 * * * ?"**，每五分钟检查一次Master服务器租期） | String   |
+| wfs-safe-cache.bloom-filter.lease-term                  | 单次租期时长**（default=9）**                                | long     |
+| wfs-safe-cache.bloom-filter.lease-term-time-unit        | 单次租期时长的时间单位                                       | TimeUnit |
+| wfs-safe-cache.bloom-filter.permission-password         | 进行布隆过滤器http操作的权限识别码**（default="root"）**     | String   |
 
 ### Redis_相关配置
 
 | 配置项                               | 解释                                                         | 数据类型 |
 | ------------------------------------ | ------------------------------------------------------------ | -------- |
-| mszq-safe-cache.redis.unified-config | 是否使用统一配置（是否使用spring.redis中的配置）**（default=true）**<br />如果设置为true，则使用spring.redis中的配置<br />如果设置为false，则使用单独的redis配置，你可以将该jar包的缓存数据存放于与spring项目本体不同的redis中；仅支持Lettuce，其余配置项与spring.redis相同 | boolean  |
-| mszq-safe-cache.redis.***            | 当mszq-safe-cache.redis.unified-config=false时启用，仅支持Lettuce，其余配置项与spring.redis配置项相同 |          |
+| wfs-safe-cache.redis.unified-config | 是否使用统一配置（是否使用spring.redis中的配置）**（default=true）**<br />如果设置为true，则使用spring.redis中的配置<br />如果设置为false，则使用单独的redis配置，你可以将该jar包的缓存数据存放于与spring项目本体不同的redis中；仅支持Lettuce，其余配置项与spring.redis相同 | boolean  |
+| wfs-safe-cache.redis.***            | 当wfs-safe-cache.redis.unified-config=false时启用，仅支持Lettuce，其余配置项与spring.redis配置项相同 |          |
 
 ## 注解使用
 
@@ -249,8 +249,8 @@ public List<Person> searchByNameAndAge(String name, int age) {
 | double[] InitOfFalseProbability | 布隆过滤器的预期错误率，该参数为用于布隆过滤器创建的两个参数之一<br />可指定多个，与bloomFilterName一一对应 |                                        |
 | Class<?>[] InitOfEntity         | 布隆过滤器对应实体类，需要标注有@TableName；标注有@TableField的字段，会根据@TableField进行SQL与字段进行映射，没有@TableField的字段默认 驼峰命名 转 下划线命，可在配置文件中进行配置<br />应用于布隆过滤器初始化阶段，用于操作数据库插入数据<br />可指定多个，与bloomFilterName一一对应 |                                        |
 | String[] InitOfFieldName        | 向布隆过滤器中插入的Entity的字段（数据库表的列名），多个字段用+号分隔，格式：fieldName = "name" 或 fieldName = "name+age"；实际插入进布隆过滤器的数据为 "张三" 或 "张三30" ，应用于布隆过滤器初始化阶段<br />可指定多个，与bloomFilterName一一对应 |                                        |
-| String updateCron               | 定时更新任务的cron，可以在application文件中进行全局配置<br />注意：如果配置文件中设置 mszq-safe-cache.bloom-filter.reset-update-cron = false，则使用 Redis 中存储的 BloomFilter:UpdateCron | "0 0 3 * * ?"                          |
-| boolean globalConfigCron        | 是否使用配置文件中的 updateCron 配置（设置为true，则优先使用全局配置中的mszq-safe-cache.bloom-filter.update-cron；配置文件中 mszq-safe-cache.bloom-filter.update-cron 为 null 则使用注解参数配置）<br />注意：如果配置文件中设置 mszq-safe-cache.bloom-filter.reset-update-cron = false，则使用 Redis 中存储的 BloomFilter:UpdateCron | true                                   |
+| String updateCron               | 定时更新任务的cron，可以在application文件中进行全局配置<br />注意：如果配置文件中设置 wfs-safe-cache.bloom-filter.reset-update-cron = false，则使用 Redis 中存储的 BloomFilter:UpdateCron | "0 0 3 * * ?"                          |
+| boolean globalConfigCron        | 是否使用配置文件中的 updateCron 配置（设置为true，则优先使用全局配置中的wfs-safe-cache.bloom-filter.update-cron；配置文件中 wfs-safe-cache.bloom-filter.update-cron 为 null 则使用注解参数配置）<br />注意：如果配置文件中设置 wfs-safe-cache.bloom-filter.reset-update-cron = false，则使用 Redis 中存储的 BloomFilter:UpdateCron | true                                   |
 
 使用案例：
 
@@ -396,7 +396,7 @@ Master服务器信息：key=BloomFilter:MasterServer
 
 对应cron配置：
 
-1. application文件全局配置--mszq-safe-cache.bloom-filter.update-cron
+1. application文件全局配置--wfs-safe-cache.bloom-filter.update-cron
 2. 注解参数单独配置--@BloomFilter  String updateCron，默认="0 0 3 * * ?"
 
 如果布隆过滤器已经被删除，则不会被更新，如需更新需手动调用http接口
@@ -405,13 +405,13 @@ Master服务器信息：key=BloomFilter:MasterServer
 
 项目启动时注册进Master服务器，仅有Master服务器拥有更新、删除定时任务2的权限（调用http接口的权限）
 
-cron配置：application文件全局配置--mszq-safe-cache.bloom-filter.false-rate-monitor-cron，默认="0 5/10 * * * ?"
+cron配置：application文件全局配置--wfs-safe-cache.bloom-filter.false-rate-monitor-cron，默认="0 5/10 * * * ?"
 
 对所有布隆过滤器进行扫描，将 **查询次数大于阈值 **且 **误判率大于阈值** 的布隆过滤器进行更新。
 
-查询次数阈值：`BloomFilter:bloomFilterName:NumberOfQueries` > `mszq-safe-cache.bloom-filter.queries-threshold`
+查询次数阈值：`BloomFilter:bloomFilterName:NumberOfQueries` > `wfs-safe-cache.bloom-filter.queries-threshold`
 
-误判率阈值：(`BloomFilter:bloomFilterName:NumberOfFalse`/`BloomFilter:bloomFilterName:NumberOfQueries`) > `mszq-safe-cache.bloom-filter.false-rate-threshold`
+误判率阈值：(`BloomFilter:bloomFilterName:NumberOfFalse`/`BloomFilter:bloomFilterName:NumberOfQueries`) > `wfs-safe-cache.bloom-filter.false-rate-threshold`
 
 如果布隆过滤器已经被删除，则不会被更新，如需更新需手动调用http接口
 
@@ -425,11 +425,11 @@ cron配置：application文件全局配置--mszq-safe-cache.bloom-filter.false-r
 
 <img src="https://github.com/wfs674895019/PersonalProjecPresentation/blob/master/README-img/图片5.png?raw=true" alt="图片5.png" style="zoom:50%;" />
 
-1. 对于主服务器：每mszq-safe-cache.bloom-filter.check-lease-cron续租BloomFilter:MasterServer一次，租期mszq-safe-cache.bloom-filter.lease-term分钟
-2. 对于其他服务器：每mszq-safe-cache.bloom-filter.check-lease-cron检查一次BloomFilter:MasterServer，如果BloomFilter:MasterServer不存在，说明主服务器已挂机，该服务器抢夺BloomFilter:MasterServer，并重新初始化布隆过滤器、注册定时更新任务。
+1. 对于主服务器：每wfs-safe-cache.bloom-filter.check-lease-cron续租BloomFilter:MasterServer一次，租期wfs-safe-cache.bloom-filter.lease-term分钟
+2. 对于其他服务器：每wfs-safe-cache.bloom-filter.check-lease-cron检查一次BloomFilter:MasterServer，如果BloomFilter:MasterServer不存在，说明主服务器已挂机，该服务器抢夺BloomFilter:MasterServer，并重新初始化布隆过滤器、注册定时更新任务。
 
-mszq-safe-cache.bloom-filter.check-lease-cron，default="0 0/5 * * * ?"
-mszq-safe-cache.bloom-filter.lease-term，default=9
+wfs-safe-cache.bloom-filter.check-lease-cron，default="0 0/5 * * * ?"
+wfs-safe-cache.bloom-filter.lease-term，default=9
 
 ## http_接口
 
