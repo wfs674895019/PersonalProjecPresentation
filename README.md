@@ -24,55 +24,55 @@
 2. 请在您的SQL环境下运行`person.sql`，该脚本提供了一个简单的person表以及1000条数据。
 3. 在`safe-cache`项目中，使用maven将项目打包至您的maven仓库中。
 4. 在`demo`项目中，确保所需的包都已经导入后，在`application.yaml`中将配置信息修改为您本地的配置，运行`DemoApplication.java`，启动`demo`项目，此时您可以看到控制台打印的相关日志信息。（为方便观测，本项目的日志均为info/error级别）
-5. 您可以通过调用http接口，来测试本项目的功能，同时控制台会打印相关的日志信息。
+5. 您可以通过调用http接口，来测试本项目的功能，同时控制台会打印相关的日志信息。（暂时只提供接口，没有提供前端页面）
 
 **项目介绍**
 
-![幻灯片2](.\README-img\项目介绍\幻灯片2.JPG)
+<img src="https://github.com/wfs674895019/PersonalProjecPresentation/blob/master/README-img/项目介绍/幻灯片2.JPG?raw=true" alt="幻灯片2.JPG"  />
 
-![幻灯片3](.\README-img\项目介绍\幻灯片3.JPG)
+<img src="https://github.com/wfs674895019/PersonalProjecPresentation/blob/master/README-img/项目介绍/幻灯片3.JPG?raw=true" alt="幻灯片3.JPG"  />
 
-![幻灯片4](.\README-img\项目介绍\幻灯片4.JPG)
+<img src="https://github.com/wfs674895019/PersonalProjecPresentation/blob/master/README-img/项目介绍/幻灯片4.JPG?raw=true" alt="幻灯片4.JPG"  />
 
-![幻灯片5](.\README-img\项目介绍\幻灯片5.JPG)
+<img src="https://github.com/wfs674895019/PersonalProjecPresentation/blob/master/README-img/项目介绍/幻灯片5.JPG?raw=true" alt="幻灯片5.JPG"  />
 
-![幻灯片6](.\README-img\项目介绍\幻灯片6.JPG)
+<img src="https://github.com/wfs674895019/PersonalProjecPresentation/blob/master/README-img/项目介绍/幻灯片6.JPG?raw=true" alt="幻灯片6.JPG"  />
 
-![幻灯片7](.\README-img\项目介绍\幻灯片7.JPG)
+<img src="https://github.com/wfs674895019/PersonalProjecPresentation/blob/master/README-img/项目介绍/幻灯片7.JPG?raw=true" alt="幻灯片7.JPG"  />
 
-![幻灯片8](.\README-img\项目介绍\幻灯片8.JPG)
+<img src="https://github.com/wfs674895019/PersonalProjecPresentation/blob/master/README-img/项目介绍/幻灯片8.JPG?raw=true" alt="幻灯片8.JPG"  />
 
-![幻灯片9](.\README-img\项目介绍\幻灯片9.JPG)
+<img src="https://github.com/wfs674895019/PersonalProjecPresentation/blob/master/README-img/项目介绍/幻灯片9.JPG?raw=true" alt="幻灯片9.JPG"  />
 
-![幻灯片10](.\README-img\项目介绍\幻灯片10.JPG)
+<img src="https://github.com/wfs674895019/PersonalProjecPresentation/blob/master/README-img/项目介绍/幻灯片10.JPG?raw=true" alt="幻灯片10.JPG"  />
 
-![幻灯片11](.\README-img\项目介绍\幻灯片11.JPG)
+<img src="https://github.com/wfs674895019/PersonalProjecPresentation/blob/master/README-img/项目介绍/幻灯片11.JPG?raw=true" alt="幻灯片11.JPG"  />
 
-![幻灯片12](.\README-img\项目介绍\幻灯片12.JPG)
+<img src="https://github.com/wfs674895019/PersonalProjecPresentation/blob/master/README-img/项目介绍/幻灯片12.JPG?raw=true" alt="幻灯片12.JPG"  />
 
-![幻灯片13](.\README-img\项目介绍\幻灯片13.JPG)
+<img src="https://github.com/wfs674895019/PersonalProjecPresentation/blob/master/README-img/项目介绍/幻灯片13.JPG?raw=true" alt="幻灯片13.JPG"  />
 
-![幻灯片14](.\README-img\项目介绍\幻灯片14.JPG)
+<img src="https://github.com/wfs674895019/PersonalProjecPresentation/blob/master/README-img/项目介绍/幻灯片14.JPG?raw=true" alt="幻灯片14.JPG"  />
 
-![幻灯片15](.\README-img\项目介绍\幻灯片15.JPG)
+<img src="https://github.com/wfs674895019/PersonalProjecPresentation/blob/master/README-img/项目介绍/幻灯片15.JPG?raw=true" alt="幻灯片15.JPG"  />
 
-![幻灯片16](.\README-img\项目介绍\幻灯片16.JPG)
+<img src="https://github.com/wfs674895019/PersonalProjecPresentation/blob/master/README-img/项目介绍/幻灯片16.JPG?raw=true" alt="幻灯片16.JPG"  />
 
-![幻灯片17](.\README-img\项目介绍\幻灯片17.JPG)
+<img src="https://github.com/wfs674895019/PersonalProjecPresentation/blob/master/README-img/项目介绍/幻灯片17.JPG?raw=true" alt="幻灯片17.JPG"  />
 
-![幻灯片18](.\README-img\项目介绍\幻灯片18.JPG)
+<img src="https://github.com/wfs674895019/PersonalProjecPresentation/blob/master/README-img/项目介绍/幻灯片18.JPG?raw=true" alt="幻灯片18.JPG"  />
 
-![幻灯片19](.\README-img\项目介绍\幻灯片19.JPG)
+<img src="https://github.com/wfs674895019/PersonalProjecPresentation/blob/master/README-img/项目介绍/幻灯片19.JPG?raw=true" alt="幻灯片19.JPG"  />
 
-![幻灯片20](.\README-img\项目介绍\幻灯片20.JPG)
+<img src="https://github.com/wfs674895019/PersonalProjecPresentation/blob/master/README-img/项目介绍/幻灯片20.JPG?raw=true" alt="幻灯片20.JPG"  />
 
-![幻灯片21](.\README-img\项目介绍\幻灯片21.JPG)
+<img src="https://github.com/wfs674895019/PersonalProjecPresentation/blob/master/README-img/项目介绍/幻灯片21.JPG?raw=true" alt="幻灯片21.JPG"  />
 
-![幻灯片22](.\README-img\项目介绍\幻灯片22.JPG)
+<img src="https://github.com/wfs674895019/PersonalProjecPresentation/blob/master/README-img/项目介绍/幻灯片22.JPG?raw=true" alt="幻灯片22.JPG"  />
 
-![幻灯片23](.\README-img\项目介绍\幻灯片23.JPG)
+<img src="https://github.com/wfs674895019/PersonalProjecPresentation/blob/master/README-img/项目介绍/幻灯片23.JPG?raw=true" alt="幻灯片23.JPG"  />
 
-![幻灯片24](.\README-img\项目介绍\幻灯片24.JPG)
+<img src="https://github.com/wfs674895019/PersonalProjecPresentation/blob/master/README-img/项目介绍/幻灯片24.JPG?raw=true" alt="幻灯片24.JPG"  />
 
 # 参考文档
 
@@ -196,7 +196,7 @@ public List<Person> searchByNameAndAge(String name, int age) {
 
 **@CacheStringSearch、@CacheHashSearch  原理：**
 
-<img src=".\README-img\图片1.png" alt="图片1" style="zoom:48%;" />
+<img src="https://github.com/wfs674895019/PersonalProjecPresentation/blob/master/README-img/图片1.png?raw=true" alt="图片1.png" style="zoom:50%;" />
 
 ***
 
@@ -256,7 +256,8 @@ public List<Person> searchByNameAndAge(String name, int age) {
 ***
 
 1. 项目启动
-   <img src=".\README-img\图片2.png" alt="图片2" style="zoom:48%;" />
+
+   <img src="https://github.com/wfs674895019/PersonalProjecPresentation/blob/master/README-img/图片2.png?raw=true" alt="图片2.png" style="zoom:50%;" />
 
    - 项目启动时会进行参数校验，包括：注解参数中数组的数量是否不一致，不一致抛异常；判断bloomFilterName是否唯一，不唯一抛异常；cron表达式是否符合规范，不规范抛异常
    - 项目启动时会在redis中尝试向`key=BloomFilter:MasterServer`中存入当前服务器的域名、端口（`redisTemplate.opsForValue().setIfAbsent`），如果存放成功，则该服务器为Master服务器，并由该服务器对布隆过滤器进行初始化和定时任务的注册。（详见定时任务3）
@@ -269,7 +270,9 @@ public List<Person> searchByNameAndAge(String name, int age) {
    - 布隆过滤器初始化过程中，因抛异常导致服务停止前，会删除初始化失败的布隆过滤器。如果删除失败，或因断电等原因导致异常处理代码没有运行，请手动删除redis中初始化失败的布隆过滤器，或等待其余服务器成为Master服务器并重新初始化布隆过滤器。
 
 2. 查询流程
-   <img src=".\README-img\图片3.png" alt="图片3" style="zoom:48%;" />布隆过滤器正在被占用：正在更新 或 正在删除
+   <img src="https://github.com/wfs674895019/PersonalProjecPresentation/blob/master/README-img/图片3.png?raw=true" alt="图片3.png" style="zoom:50%;" />
+
+   布隆过滤器正在被占用：正在更新 或 正在删除
 
    每次查询，`key=BloomFilter:bloomFilterName:NumberOfQueries`会+1；如果查询数据库，数据为null，说明发生误判，`key=BloomFilter:bloomFilterName:NumberOfFalse`会+1
 
@@ -322,7 +325,7 @@ public void insertPerson(String name, int age, String message) {
 
 **原理：**
 
-<img src=".\README-img\图片4.png" alt="图片4" style="zoom:48%;" />
+<img src="https://github.com/wfs674895019/PersonalProjecPresentation/blob/master/README-img/图片4.png?raw=true" alt="图片4.png" style="zoom:50%;" />
 
 ## Redis key
 
@@ -387,7 +390,7 @@ cron配置：application文件全局配置--mszq-safe-cache.bloom-filter.false-r
 
 当主服务器出现意外挂机时，布隆过滤器定时更新任务无法进行。为此，创建检查主服务器租期定时任务。
 
-<img src=".\README-img\图片5.png" alt="图片5" style="zoom:48%;" />
+<img src="https://github.com/wfs674895019/PersonalProjecPresentation/blob/master/README-img/图片5.png?raw=true" alt="图片5.png" style="zoom:50%;" />
 
 1. 对于主服务器：每mszq-safe-cache.bloom-filter.check-lease-cron续租BloomFilter:MasterServer一次，租期mszq-safe-cache.bloom-filter.lease-term分钟
 2. 对于其他服务器：每mszq-safe-cache.bloom-filter.check-lease-cron检查一次BloomFilter:MasterServer，如果BloomFilter:MasterServer不存在，说明主服务器已挂机，该服务器抢夺BloomFilter:MasterServer，并重新初始化布隆过滤器、注册定时更新任务。
