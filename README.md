@@ -1,35 +1,35 @@
-- [免责声明](#----)
-- [项目介绍](#----)
-- [参考文档](#----)
-   * [application 配置项](#application----)
-      + [SafeCacheProperties：缓存击穿相关配置](#safecacheproperties---------)
-      + [SafeCacheBloomFilterProperties：缓存穿透相关配置](#safecachebloomfilterproperties---------)
-      + [Redis 相关配置](#redis-----)
-   * [注解使用](#----)
-      + [@CacheStringSearch](#-cachestringsearch)
-      + [@CacheHashSearch](#-cachehashsearch)
-      + [@BloomFilter](#-bloomfilter)
-      + [@AddDataToBloomFilter @AddDataToBloomFilters](#-adddatatobloomfilter--adddatatobloomfilters)
-   * [Redis key](#redis-key)
-   * [定时任务](#----)
-      + [更新定时任务1-布隆过滤器定时更新](#------1----------)
-      + [更新定时任务2-误判率检测](#------2------)
-      + [定时任务3-Master服务器租期检查](#----3-master-------)
-   * [http 接口](#http---)
-      + [/bloomFilter/getAllBloomFilter](#-bloomfilter-getallbloomfilter)
-      + [/bloomFilter/contains](#-bloomfilter-contains)
-      + [/bloomFilter/update](#-bloomfilter-update)
-      + [/bloomFilter/delete](#-bloomfilter-delete)
-      + [/bloomFilter/addData](#-bloomfilter-adddata)
-      + [/bloomFilter/updateSchedule/getAllSchedule](#-bloomfilter-updateschedule-getallschedule)
-      + [/bloomFilter/updateSchedule/update](#-bloomfilter-updateschedule-update)
-      + [/bloomFilter/updateSchedule/delete](#-bloomfilter-updateschedule-delete)
-      + [/bloomFilter/falseRateMonitorSchedule/update](#-bloomfilter-falseratemonitorschedule-update)
-      + [/bloomFilter/falseRateMonitorSchedule/delete](#-bloomfilter-falseratemonitorschedule-delete)
-      + [/bloomFilter/getBloomFilterMasterServer](#-bloomfilter-getbloomfiltermasterserver)
-      + [/bloomFilter/isBloomFilterMasterServer](#-bloomfilter-isbloomfiltermasterserver)
-      + [/bloomFilter/becameMasterServer](#-bloomfilter-becamemasterserver)
-      + [/bloomFilter/cancelMasterServer](#-bloomfilter-cancelmasterserver)
+- [免责声明](#免责声明)
+- [项目介绍](#项目介绍)
+- [参考文档](#参考文档)
+  - [application 配置项](#application_配置项)
+    - [SafeCacheProperties：缓存击穿相关配置](#SafeCacheProperties：缓存击穿相关配置)
+    - [SafeCacheBloomFilterProperties：缓存穿透相关配置](#SafeCacheBloomFilterProperties：缓存穿透相关配置)
+    - [Redis 相关配置](#Redis_相关配置)
+  - [注解使用](#注解使用)
+    - [@CacheStringSearch](#@CacheStringSearch)
+    - [@CacheHashSearch](#@CacheHashSearch)
+    - [@BloomFilter](#@BloomFilter)
+    - [@AddDataToBloomFilter @AddDataToBloomFilters](#@AddDataToBloomFilter/@AddDataToBloomFilters)
+  - [Redis key](#Redis_key)
+  - [定时任务](#定时任务)
+    - [更新定时任务1-布隆过滤器定时更新](#更新定时任务1-布隆过滤器定时更新)
+    - [更新定时任务2-误判率检测](#更新定时任务2-误判率检测)
+    - [定时任务3-Master服务器租期检查](#定时任务3-Master服务器租期检查)
+  - [http 接口](#http_接口)
+    - [/bloomFilter/getAllBloomFilter](#/bloomFilter/getAllBloomFilter)
+    - [/bloomFilter/contains](#/bloomFilter/contains)
+    - [/bloomFilter/update](#/bloomFilter/update)
+    - [/bloomFilter/delete](#/bloomfilter/delete)
+    - [/bloomFilter/addData](#/bloomfilter/adddata)
+    - [/bloomFilter/updateSchedule/getAllSchedule](#/bloomfilter/updateschedule/getallschedule)
+    - [/bloomFilter/updateSchedule/update](#/bloomfilter/updateschedule/update)
+    - [/bloomFilter/updateSchedule/delete](#/bloomfilter/updateschedule/delete)
+    - [/bloomFilter/falseRateMonitorSchedule/update](#/bloomfilter/falseratemonitorschedule/update)
+    - [/bloomFilter/falseRateMonitorSchedule/delete](#/bloomfilter/falseratemonitorschedule/delete)
+    - [/bloomFilter/getBloomFilterMasterServer](#/bloomfilter/getbloomfiltermasterserver)
+    - [/bloomFilter/isBloomFilterMasterServer](#/bloomfilter/isbloomfiltermasterserver)
+    - [/bloomFilter/becameMasterServer](#/bloomFilter/becameMasterServer)
+    - [/bloomFilter/cancelMasterServer](#/bloomFilter/cancelMasterServer)
 
 # 免责声明
 
@@ -109,7 +109,7 @@
 
 # 参考文档
 
-## application 配置项
+## application_配置项
 
 ### SafeCacheProperties：缓存击穿相关配置
 
@@ -143,7 +143,7 @@
 | mszq-safe-cache.bloom-filter.lease-term-time-unit        | 单次租期时长的时间单位                                       | TimeUnit |
 | mszq-safe-cache.bloom-filter.permission-password         | 进行布隆过滤器http操作的权限识别码**（default="root"）**     | String   |
 
-### Redis 相关配置
+### Redis_相关配置
 
 | 配置项                               | 解释                                                         | 数据类型 |
 | ------------------------------------ | ------------------------------------------------------------ | -------- |
@@ -309,7 +309,7 @@ public List<Person> searchByNameAndAge(String name, int age) {
 
    每次查询，`key=BloomFilter:bloomFilterName:NumberOfQueries`会+1；如果查询数据库，数据为null，说明发生误判，`key=BloomFilter:bloomFilterName:NumberOfFalse`会+1
 
-### @AddDataToBloomFilter @AddDataToBloomFilters
+### @AddDataToBloomFilter/@AddDataToBloomFilters
 
 向布隆过滤器中添加数据，保证在MySQL中数据的插入、更新方法上添加该注解。
 
@@ -360,7 +360,7 @@ public void insertPerson(String name, int age, String message) {
 
 <img src="https://github.com/wfs674895019/PersonalProjecPresentation/blob/master/README-img/图片4.png?raw=true" alt="图片4.png" style="zoom:50%;" />
 
-## Redis key
+## Redis_key
 
 布隆过滤器：key=BloomFilter:bloomFilterName
 
@@ -431,7 +431,7 @@ cron配置：application文件全局配置--mszq-safe-cache.bloom-filter.false-r
 mszq-safe-cache.bloom-filter.check-lease-cron，default="0 0/5 * * * ?"
 mszq-safe-cache.bloom-filter.lease-term，default=9
 
-## http 接口
+## http_接口
 
 均为get请求
 

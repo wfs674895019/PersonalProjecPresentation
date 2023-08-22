@@ -70,7 +70,7 @@
       <workItem from="1692610936042" duration="941000" />
       <workItem from="1692667626490" duration="1008000" />
       <workItem from="1692691293034" duration="1200000" />
-      <workItem from="1692692514225" duration="1931000" />
+      <workItem from="1692692514225" duration="3061000" />
     </task>
     <task id="LOCAL-00001" summary="项目提交">
       <created>1692611151848</created>
@@ -107,7 +107,14 @@
       <option name="project" value="LOCAL" />
       <updated>1692694562641</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="添加README.md目录">
+      <created>1692695262020</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1692695262020</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
