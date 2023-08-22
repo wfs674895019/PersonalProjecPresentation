@@ -2,43 +2,16 @@ spring:
   cache:
     type: redis
   datasource:
-    url: jdbc:mysql://localhost:3306/mytest
-    password: wfsxl6748.
-    username: root
+    url: jdbc:mysql://localhost:3306/your_database
+    password: your_password
+    username: your_username
     driver-class-name: com.mysql.cj.jdbc.Driver
   redis:
     database: 0
-#    client-name: spring
-mybatis-plus:
-  configuration:
-    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
-
 
 wfs-safe-cache:
-  timeout: 60
-  timeout-of-null: 30
-  save-null: true
-  enable-distributed-lock: false
   bloom-filter:
-#    update-cron: 0/10 * * * * ?
-    update-cron: stop
-#    false-rate-monitor-cron: 0/20 * * * * ?
-    false-rate-monitor-cron: stop
-    queries-threshold: 2
-    false-rate-threshold: -1
-    reset-update-cron: true
-    reset-bloom-filter-config: true
-    max-amount-of-inserted-data: 500
+    max-amount-of-inserted-data: 200
   redis:
     unified-config: false
-    host: localhost
     database: 1
-    port: 6379
-  unit-of-null: seconds
-#    client-name: wfs-safe-cache
-#    lettuce:
-#      pool:
-#        enabled: true
-#        max-active: 0
-#        max-idle: 0
-#        max-wait: 0

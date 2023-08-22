@@ -4,8 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cfff8fc6-5a91-46fe-adbb-5d4cf747fcde" name="变更" comment="更新README.md目录">
+    <list default="true" id="cfff8fc6-5a91-46fe-adbb-5d4cf747fcde" name="变更" comment="更新README.md">
+      <change afterPath="$PROJECT_DIR$/wfs-http.postman_collection.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/src/main/java/com/wfs/demo/controller/PersonController.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/main/java/com/wfs/demo/controller/PersonController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/src/main/java/com/wfs/demo/entity/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/main/java/com/wfs/demo/entity/Person.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/src/main/java/com/wfs/demo/service/PersonService.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/main/java/com/wfs/demo/service/PersonService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/main/resources/application.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,6 +44,10 @@
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
@@ -69,7 +80,8 @@
       <workItem from="1692610936042" duration="941000" />
       <workItem from="1692667626490" duration="1008000" />
       <workItem from="1692691293034" duration="1200000" />
-      <workItem from="1692692514225" duration="3383000" />
+      <workItem from="1692692514225" duration="3440000" />
+      <workItem from="1692700603096" duration="2134000" />
     </task>
     <task id="LOCAL-00001" summary="项目提交">
       <created>1692611151848</created>
@@ -120,7 +132,14 @@
       <option name="project" value="LOCAL" />
       <updated>1692696384550</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="更新README.md">
+      <created>1692696708551</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1692696708551</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -139,10 +158,10 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="项目提交" />
-    <MESSAGE value="更新README.md" />
     <MESSAGE value="更新README.md的图片地址" />
     <MESSAGE value="添加README.md目录" />
     <MESSAGE value="更新README.md目录" />
-    <option name="LAST_COMMIT_MESSAGE" value="更新README.md目录" />
+    <MESSAGE value="更新README.md" />
+    <option name="LAST_COMMIT_MESSAGE" value="更新README.md" />
   </component>
 </project>

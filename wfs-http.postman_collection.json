@@ -1,0 +1,529 @@
+{
+	"info": {
+		"_postman_id": "2e60c945-44fd-41df-8a7c-59660f39513c",
+		"name": "wfs-http",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "20981021"
+	},
+	"item": [
+		{
+			"name": "searchByNameAndAge",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "userName",
+							"value": "张三",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "password",
+							"value": "123456",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8080/person/searchByNameAndAge?name=张三&age=10",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"person",
+						"searchByNameAndAge"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "张三"
+						},
+						{
+							"key": "age",
+							"value": "10"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "searchByName",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/person/searchByName?name=张三丰",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"person",
+						"searchByName"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "张三丰"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "insertPerson",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/person/insertPerson?name=张三&age=10&message=123",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"person",
+						"insertPerson"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "张三"
+						},
+						{
+							"key": "age",
+							"value": "10"
+						},
+						{
+							"key": "message",
+							"value": "123"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getAllBloomFilter",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/bloomFilter/getAllBloomFilter?permissionPassword=root",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"bloomFilter",
+						"getAllBloomFilter"
+					],
+					"query": [
+						{
+							"key": "permissionPassword",
+							"value": "root"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/bloomFilter/update?bloomFilterName=searchByNameAndAgeBloomFilter&expectedInsertions=1200&falseProbability=0.2&permissionPassword=root",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"bloomFilter",
+						"update"
+					],
+					"query": [
+						{
+							"key": "bloomFilterName",
+							"value": "searchByNameAndAgeBloomFilter"
+						},
+						{
+							"key": "expectedInsertions",
+							"value": "1200"
+						},
+						{
+							"key": "falseProbability",
+							"value": "0.2"
+						},
+						{
+							"key": "permissionPassword",
+							"value": "root"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/bloomFilter/delete?bloomFilterName=searchByNameAndAgeBloomFilter&permissionPassword=root",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"bloomFilter",
+						"delete"
+					],
+					"query": [
+						{
+							"key": "bloomFilterName",
+							"value": "searchByNameAndAgeBloomFilter"
+						},
+						{
+							"key": "permissionPassword",
+							"value": "root"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "contains",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/bloomFilter/contains?bloomFilterName=searchByNameAndAgeBloomFilter&data=张三10",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"bloomFilter",
+						"contains"
+					],
+					"query": [
+						{
+							"key": "bloomFilterName",
+							"value": "searchByNameAndAgeBloomFilter"
+						},
+						{
+							"key": "data",
+							"value": "张三10"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "addData",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/bloomFilter/addData?bloomFilterName=searchByNameAndAgeBloomFilter&data=张三10",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"bloomFilter",
+						"addData"
+					],
+					"query": [
+						{
+							"key": "bloomFilterName",
+							"value": "searchByNameAndAgeBloomFilter"
+						},
+						{
+							"key": "data",
+							"value": "张三10"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "updateSchedule/update",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/bloomFilter/updateSchedule/update?bloomFilterName=searchByNameAndAgeBloomFilter&cron=0/20 * * * * ?&permissionPassword=root",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"bloomFilter",
+						"updateSchedule",
+						"update"
+					],
+					"query": [
+						{
+							"key": "bloomFilterName",
+							"value": "searchByNameAndAgeBloomFilter"
+						},
+						{
+							"key": "cron",
+							"value": "0/20 * * * * ?"
+						},
+						{
+							"key": "permissionPassword",
+							"value": "root"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "updateSchedule/delete",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/bloomFilter/updateSchedule/delete?bloomFilterName=searchByNameAndAgeBloomFilter&permissionPassword=root",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"bloomFilter",
+						"updateSchedule",
+						"delete"
+					],
+					"query": [
+						{
+							"key": "bloomFilterName",
+							"value": "searchByNameAndAgeBloomFilter"
+						},
+						{
+							"key": "permissionPassword",
+							"value": "root"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "updateSchedule/getAllSchedule",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/bloomFilter/updateSchedule/getAllSchedule?permissionPassword=root",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"bloomFilter",
+						"updateSchedule",
+						"getAllSchedule"
+					],
+					"query": [
+						{
+							"key": "permissionPassword",
+							"value": "root"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "falseRateMonitorSchedule/update",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/bloomFilter/falseRateMonitorSchedule/update?permissionPassword=root&cron=stop",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"bloomFilter",
+						"falseRateMonitorSchedule",
+						"update"
+					],
+					"query": [
+						{
+							"key": "permissionPassword",
+							"value": "root"
+						},
+						{
+							"key": "cron",
+							"value": "stop"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "falseRateMonitorSchedule/delete",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/bloomFilter/falseRateMonitorSchedule/delete?permissionPassword=root",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"bloomFilter",
+						"falseRateMonitorSchedule",
+						"delete"
+					],
+					"query": [
+						{
+							"key": "permissionPassword",
+							"value": "root"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getBloomFilterMasterServer",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/bloomFilter/getBloomFilterMasterServer?permissionPassword=root",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"bloomFilter",
+						"getBloomFilterMasterServer"
+					],
+					"query": [
+						{
+							"key": "permissionPassword",
+							"value": "root"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "becameMasterServer",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/bloomFilter/becameMasterServer?permissionPassword=root",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"bloomFilter",
+						"becameMasterServer"
+					],
+					"query": [
+						{
+							"key": "permissionPassword",
+							"value": "root"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "cancelMasterServer",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/bloomFilter/cancelMasterServer?permissionPassword=root",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"bloomFilter",
+						"cancelMasterServer"
+					],
+					"query": [
+						{
+							"key": "permissionPassword",
+							"value": "root"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "isBloomFilterMasterServer",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/bloomFilter/isBloomFilterMasterServer?permissionPassword=root",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"bloomFilter",
+						"isBloomFilterMasterServer"
+					],
+					"query": [
+						{
+							"key": "permissionPassword",
+							"value": "root"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
