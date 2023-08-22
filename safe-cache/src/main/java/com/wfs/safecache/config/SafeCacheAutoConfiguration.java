@@ -5,7 +5,6 @@ import com.baomidou.mybatisplus.extension.plugins.inner.PaginationInnerIntercept
 import com.wfs.safecache.aop.BloomFilterAop;
 import com.wfs.safecache.aop.CacheSearchAop;
 import com.wfs.safecache.controller.BloomFilterController;
-import com.wfs.safecache.controller.BloomFilterWeb;
 import com.wfs.safecache.properties.SafeCacheBloomFilterProperties;
 import com.wfs.safecache.properties.SafeCacheProperties;
 import com.wfs.safecache.scanner.BloomFilterScanner;
@@ -64,14 +63,6 @@ public class SafeCacheAutoConfiguration {
     @Bean
     public BloomFilterController bloomFilterController() {
         return new BloomFilterController();
-    }
-
-    /**
-     * BloomFilter操作主页web接口注册进spring
-     */
-    @Bean
-    public BloomFilterWeb bloomFilterWeb() {
-        return new BloomFilterWeb();
     }
 
     /**
