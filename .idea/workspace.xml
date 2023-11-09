@@ -4,8 +4,31 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cfff8fc6-5a91-46fe-adbb-5d4cf747fcde" name="变更" comment="简化部分代码，添加postman的json文件">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="cfff8fc6-5a91-46fe-adbb-5d4cf747fcde" name="变更" comment="测试">
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/safe-cache/src/main/java/com/wfs/safecache/config/MyRedisAutoConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/safe-cache/src/main/java/com/wfs/safecache/config/MyRedisAutoConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/safe-cache/src/main/java/com/wfs/safecache/config/SafeCacheAutoConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/safe-cache/src/main/java/com/wfs/safecache/config/SafeCacheAutoConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/safe-cache/src/main/java/com/wfs/safecache/controller/BloomFilterController.java" beforeDir="false" afterPath="$PROJECT_DIR$/safe-cache/src/main/java/com/wfs/safecache/controller/BloomFilterController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/safe-cache/src/main/java/com/wfs/safecache/entity/BloomFilterContainsEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/safe-cache/src/main/java/com/wfs/safecache/entity/BloomFilterContainsEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/safe-cache/src/main/java/com/wfs/safecache/entity/BloomFilterEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/safe-cache/src/main/java/com/wfs/safecache/entity/BloomFilterEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/safe-cache/src/main/java/com/wfs/safecache/entity/MasterServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/safe-cache/src/main/java/com/wfs/safecache/entity/MasterServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/safe-cache/src/main/java/com/wfs/safecache/entity/Result.java" beforeDir="false" afterPath="$PROJECT_DIR$/safe-cache/src/main/java/com/wfs/safecache/entity/Result.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/safe-cache/src/main/java/com/wfs/safecache/myEnum/BloomFilterEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/safe-cache/src/main/java/com/wfs/safecache/myEnum/BloomFilterEnum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/safe-cache/src/main/java/com/wfs/safecache/myEnum/RedisKeysEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/safe-cache/src/main/java/com/wfs/safecache/myEnum/RedisKeysEnum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/safe-cache/src/main/java/com/wfs/safecache/properties/MyRedisProperties.java" beforeDir="false" afterPath="$PROJECT_DIR$/safe-cache/src/main/java/com/wfs/safecache/properties/MyRedisProperties.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/safe-cache/src/main/java/com/wfs/safecache/properties/SafeCacheBloomFilterProperties.java" beforeDir="false" afterPath="$PROJECT_DIR$/safe-cache/src/main/java/com/wfs/safecache/properties/SafeCacheBloomFilterProperties.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/safe-cache/src/main/java/com/wfs/safecache/properties/SafeCacheProperties.java" beforeDir="false" afterPath="$PROJECT_DIR$/safe-cache/src/main/java/com/wfs/safecache/properties/SafeCacheProperties.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/safe-cache/src/main/java/com/wfs/safecache/util/SpelUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/safe-cache/src/main/java/com/wfs/safecache/util/SpelUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/safe-cache/src/main/java/com/wfs/safecache/validator/CronValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/safe-cache/src/main/java/com/wfs/safecache/validator/CronValidator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/safe-cache/src/main/java/com/wfs/safecache/validator/FalseProbabilityValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/safe-cache/src/main/java/com/wfs/safecache/validator/FalseProbabilityValidator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/safe-cache/src/main/java/com/wfs/safecache/validator/annotation/CronValidate.java" beforeDir="false" afterPath="$PROJECT_DIR$/safe-cache/src/main/java/com/wfs/safecache/validator/annotation/CronValidate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/safe-cache/src/main/java/com/wfs/safecache/validator/annotation/FalseProbabilityValidate.java" beforeDir="false" afterPath="$PROJECT_DIR$/safe-cache/src/main/java/com/wfs/safecache/validator/annotation/FalseProbabilityValidate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/safe-cache/src/main/java/com/wfs/safecache/vo/BFContainsANDAddDataVo.java" beforeDir="false" afterPath="$PROJECT_DIR$/safe-cache/src/main/java/com/wfs/safecache/vo/BFContainsANDAddDataVo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/safe-cache/src/main/java/com/wfs/safecache/vo/BFDeleteVo.java" beforeDir="false" afterPath="$PROJECT_DIR$/safe-cache/src/main/java/com/wfs/safecache/vo/BFDeleteVo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/safe-cache/src/main/java/com/wfs/safecache/vo/BFScheduleDeleteVo.java" beforeDir="false" afterPath="$PROJECT_DIR$/safe-cache/src/main/java/com/wfs/safecache/vo/BFScheduleDeleteVo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/safe-cache/src/main/java/com/wfs/safecache/vo/BFScheduleUpdateVo.java" beforeDir="false" afterPath="$PROJECT_DIR$/safe-cache/src/main/java/com/wfs/safecache/vo/BFScheduleUpdateVo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/safe-cache/src/main/java/com/wfs/safecache/vo/BFUpdateVo.java" beforeDir="false" afterPath="$PROJECT_DIR$/safe-cache/src/main/java/com/wfs/safecache/vo/BFUpdateVo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/safe-cache/src/main/java/com/wfs/safecache/vo/FRMScheduleUpdateVo.java" beforeDir="false" afterPath="$PROJECT_DIR$/safe-cache/src/main/java/com/wfs/safecache/vo/FRMScheduleUpdateVo.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,6 +98,7 @@
       <workItem from="1692703311085" duration="94000" />
       <workItem from="1694170880133" duration="7000" />
       <workItem from="1696751120514" duration="296000" />
+      <workItem from="1699513932027" duration="715000" />
     </task>
     <task id="LOCAL-00001" summary="项目提交">
       <created>1692611151848</created>
@@ -139,7 +163,14 @@
       <option name="project" value="LOCAL" />
       <updated>1692702931963</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="测试">
+      <created>1699513969678</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1699513969678</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -163,6 +194,7 @@
     <MESSAGE value="更新README.md目录" />
     <MESSAGE value="更新README.md" />
     <MESSAGE value="简化部分代码，添加postman的json文件" />
-    <option name="LAST_COMMIT_MESSAGE" value="简化部分代码，添加postman的json文件" />
+    <MESSAGE value="测试" />
+    <option name="LAST_COMMIT_MESSAGE" value="测试" />
   </component>
 </project>

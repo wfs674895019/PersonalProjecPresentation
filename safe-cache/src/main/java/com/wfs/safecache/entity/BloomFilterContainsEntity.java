@@ -7,19 +7,5 @@ import lombok.Data;
  */
 @Data
 public class BloomFilterContainsEntity {
-
-    /**
-     * 布隆过滤器名称
-     */
-    private String bloomFilterName;
-
-    /**
-     * 插入进布隆过滤器中数据的spel语句
-     */
-    private String dataOfBloomFilter;
-
-    /**
-     * 查询数据是否存在
-     */
-    private boolean contains;
+//涉及版权，不予展示
 }

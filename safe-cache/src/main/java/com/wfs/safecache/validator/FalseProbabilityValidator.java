@@ -9,10 +9,7 @@ public class FalseProbabilityValidator implements ConstraintValidator<FalseProba
 
     @Override
     public boolean isValid(Double value, ConstraintValidatorContext context) {
-        if (value != null) {
-            return value >= 0 && value < 1;
-        } else {
-            return true;
-        }
+//涉及版权，不予展示
+        return false;
     }
 }

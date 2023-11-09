@@ -15,9 +15,5 @@ import static java.lang.annotation.RetentionPolicy.RUNTIME;
 @Retention(RUNTIME)
 @Constraint(validatedBy = CronValidator.class)
 public @interface CronValidate {
-    String message() default "";
-
-    Class<?>[] groups() default {};
-
-    Class<? extends Payload>[] payload() default {};
+//涉及版权，不予展示
 }

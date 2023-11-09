@@ -8,9 +8,5 @@ import lombok.Data;
  */
 @Data
 public class FRMScheduleUpdateVo {
-
-    @CronValidate(message = "cron不符合格式要求")
-    String cron;
-
-    String permissionPassword;
+//涉及版权，不予展示
 }

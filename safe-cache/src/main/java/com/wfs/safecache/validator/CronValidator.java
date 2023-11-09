@@ -11,6 +11,8 @@ public class CronValidator implements ConstraintValidator<CronValidate, String> 
 
     @Override
     public boolean isValid(String value, ConstraintValidatorContext context) {
-        return StringUtils.hasText(value) && CronExpression.isValidExpression(value);
+        //涉及版权，不予展示
+
+        return false;
     }
 }

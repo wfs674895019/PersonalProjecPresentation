@@ -18,10 +18,5 @@ import static java.lang.annotation.RetentionPolicy.RUNTIME;
 @Retention(RUNTIME)
 @Constraint(validatedBy = FalseProbabilityValidator.class)
 public @interface FalseProbabilityValidate {
-
-    String message() default "";
-
-    Class<?>[] groups() default {};
-
-    Class<? extends Payload>[] payload() default {};
+//涉及版权，不予展示
 }

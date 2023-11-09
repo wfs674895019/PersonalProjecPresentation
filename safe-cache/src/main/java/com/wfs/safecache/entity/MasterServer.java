@@ -6,6 +6,5 @@ import lombok.Data;
 @Data
 @AllArgsConstructor
 public class MasterServer {
-    private String ip;
-    private String port;
+//涉及版权，不予展示
 }
